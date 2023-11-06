@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width">
   <title>Armored Core VI</title>
   <link href="css/style.css" rel="stylesheet" type="text/css" />
-  <script src="test.js"></script>
+
+  <script src="jquery/jquery-3.7.1.min.js"></script>
+
+  <script src="script.js" defer></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,8 +22,6 @@
 </head>
 
 <body>
-
-  <script src="script.js"></script>
 
   <header>
     <div id="nav-container">
@@ -39,11 +40,16 @@
 
     <section id="banner">
       <div id="video-back">
+        <video autoplay  muted id="video-back-loop">
+            <source src="assets/Vidéos/Armored_Cut_Background_Nightfall_V2.mp4">
+          </video>
+          <img id="img-banner-background" src="assets/Images/armored-core-6-banner.jpg"/>
         <div id="h1-title">
           <h1>Let's get to work.</h1>
         </div>
       </div>
     </section>
+
 
   </header>
 
@@ -153,8 +159,6 @@
   <div class="flex-element-deux">
 
   </div></!---->
-
-    <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
 </body>
 
 </html>
