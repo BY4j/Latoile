@@ -16,7 +16,7 @@ body {
     width: auto;
     display: flex;
     flex-direction: column;
-    background-image: url("../Images/armored-core-6-banner.jpg");
+    background-image: url("../assets/Images/armored-core-6-banner.jpg");
     justify-content: center;
     align-items: center;
   }
@@ -157,15 +157,15 @@ body {
     height: 700px;
   }
   .image-un {
-    background-image: url("../Images/armored-core-6-background-quatre.jpg");
+    background-image: url("../assets/Images/armored-core-6-background-quatre.jpg");
     background-position: left;
   }
   .image-deux {
-    background-image: url("../Images/armored-core-6-background-deux.png");
+    background-image: url("../assets/Images/armored-core-6-background-deux.png");
   }
 
   .image-trois {
-    background-image: url("../Images/armored-core-6-background-trois.jpg");
+    background-image: url("../assets/Images/armored-core-6-background-trois.jpg");
   }
 
 
