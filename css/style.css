@@ -1,3 +1,8 @@
+
+html{
+  scroll-behavior: smooth;
+}
+
 /* BODY */
 body {
   margin: 0;
@@ -154,6 +159,7 @@ h2 {
   width: auto;
   height: 960px;
 }
+
 .flex-summary {
   display: flex;
   justify-content: center;
@@ -183,43 +189,72 @@ h2 {
 
 
 /* WORLD */
-.flex-triple-faction {
-  height: 700px;
-  width: auto;
+
+.flex-factions {
+  height: auto;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  gap: 60px;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.wrap {
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 50px;
 }
 
 .img-place {
   position: relative;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   display: flex;
   border: 2px solid white;
   width: 500px;
-  height: 700px;
+  height: 300px;
+
 }
 
-.image-un {
-  background-image: url("../assets/Images/armored-core-6-background-quatre.jpg");
-  background-position: left;
+.img-place img {
+  width: 500px;
+  height: auto;
 }
 
-.image-deux {
-  background-image: url("../assets/Images/armored-core-6-background-deux.png");
+#invisible {
+  width: 500px;
+  height: auto;
 }
 
-.image-trois {
-  background-image: url("../assets/Images/armored-core-6-background-trois.jpg");
+#img-PCA {
+  background-image: url("../assets/Images/Emblem_ACVI_PCA.webp");
 }
 
+#img-Balam {
+  background-image: url("../assets/Images/Emblem_ACVI_Balam_Industries.webp");
+}
+
+#img-Arquebus {
+  background-image: url("../assets/Images/Emblem_ACVI_Arquebus_Corporation.webp");
+}
+
+#img-RAD {
+  background-image: url("../assets/Images/Emblem_ACVI_RaD.webp");
+}
+
+#img-RLF {
+  background-image: url("../assets/Images/Emblem_ACVI_Rubicon_Liberation_Front.webp");
+}
 
 .img-desc {
   position: absolute;
   bottom: 0;
-  background: #00000080;
+  background: #00000090;
   color: #fff;
   font-size: 20px;
   padding: 5px;
@@ -233,13 +268,18 @@ h2 {
   visibility: visible;
 }
 
-/* FLEX FACTIONS*/
+/* FLEX Gameplay Overview*/
 .flex-double {
   display: flex;
   justify-content: center;
   height: 700px;
   width: auto;
-  gap: 150px;
+  gap: 200px;
+  background-color: #00000090;
+}
+
+h3 {
+  background-color: #9d9d9d90;
 }
 
 .flex-element {
@@ -248,12 +288,12 @@ h2 {
   width: 500px;
 }
 
-/* FLEX EMBLEM */
-.flex-element-emblem {
+/* FLEX DOUBLE */
+.flex-element-video {
   border: 2px solid white;
   padding: 10px;
-  height: 250px;
-  width: 250px;
+  height: auto;
+  width: auto;
 }
 
 .flex-element-emblem img {

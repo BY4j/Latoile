@@ -5,16 +5,16 @@ var h1= document.getElementById('h1-title');
 banner_video.addEventListener('ended', function () {
 
 
+
     $(this).fadeOut('5000', function () {
         banner_image.fadeIn('5000');
         h1.fadeIn('5000');
     });
-    banner_image.style.display = 'inline';
-    h1.style.display = 'inline';
+    banner_image.style.display = 'block';
+    h1.style.display = 'block';
 }, false);
 
 
-/*
 $(window).on('mousewheel', function() {
 	$('html, body').stop();
 });
@@ -27,4 +27,3 @@ $(window).scroll(function(){
     var scroll = $(this).scrollTop();
     scroll > 70 ? scroll_vid.pause() : scroll_vid.play();
   })
-  */

@@ -9,7 +9,7 @@
 
   <script src="jquery/jquery-3.7.1.min.js"></script>
 
-  <script src="script.js" defer></script>
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,12 +27,12 @@
     <div id="nav-container">
       <nav>
         <div class="flex-logo">
-          <a href="index.html"><img src="assets/Images/ACVI_Logo_V2.jpg"></a>
+          <a href="#top"><img src="assets/Images/ACVI_Logo_V2.jpg"></a>
         </div>
         <div class="flex-nav">
           <p><a href="#jump-summary" class="lien">Summary</a></p>
-          <p><a href="#jump-world" class="lien">World</a></p>
           <p><a href="#jump-factions" class="lien">Factions</a></p>
+          <p><a href="#jump-Gameplay-Overview" class="lien">Gameplay Overview</a></p>
           <a href="" class="lien">Gallery</a>
         </div>
       </nav>
@@ -85,68 +85,93 @@
   </section>
 
 
-  <section id="world-section">
+  <section id="factions-section">
     <div class="section-title">
-      <h2 id="jump-world">World</h2>
+      <h2 id="jump-factions">Factions</h2>
     </div>
 
-    <div class="flex-triple-faction">
+    <div class="flex-factions">
 
-      <div class="img-place image-un">
-        <div class="img-desc">
-          <p>Travel the vast and desolate landscapes of Rubicon aboard your mech. See for yourself the desolation that
-            was brought
-            by the fires of Ibis. Battle in the ruins of an once powerful civilization.</p>
+
+      <div class="wrap">
+        <div class="img-place" id="img-PCA">
+          <div class="img-desc">
+            <p>The Planetary Closure Administration is an organization in ARMORED CORE VI FIRES OF RUBICON. The
+              PCA regulates access to Rubicon 3, and has commandeered numerous autonomous C-Weapons left behind by the
+              Rubicon Research Institute after the Fires of Ibis.</p>
+          </div>
+        </div>
+
+        <div class="img-place" id="img-Balam">
+          <div class="img-desc">
+            <p>Balam Industries is a manufacturer of Armored Core parts in ARMORED CORE VI FIRES OF RUBICON. Their motto
+              is, "Domination through material superiority." They are one of the major corporations on Rubicon 3,
+              with their power enforced by their in-house mercenary company the Redguns. </p>
+          </div>
+        </div>
+
+        <div class="img-place" id="img-Arquebus">
+          <div class="img-desc">
+            <p>Arquebus Corporation is a manufacturer of Armored Core parts in ARMORED CORE VI FIRES OF
+              RUBICON. Among their assets include an elite mercenary squadron, codenamed "Vespers" and their subsidiary,
+              Schneider, which also manufactures AC parts and schematics. They are a major faction in the planet Rubicon
+              3. </p>
+          </div>
+        </div>
+
+        <div class="img-place" id="img-RAD">
+          <div class="img-desc">
+            <p>Reuse and Development (RaD) is a black market arms dealer organization in ARMORED CORE VI FIRES OF
+              RUBICON. They have a reputation for viciousness, and are known for assembling and selling their own
+              heavily customized mechs made from the products of other manufacturers</p>
+          </div>
+        </div>
+
+        <div class="img-place" id="img-RLF">
+          <div class="img-desc">
+            <p>The Rubicon Liberation Front is an organization on the planet Rubicon 3. Composed of the
+              original colonists that survived the Fires of Ibis and their descendants, the RLF hold a strange religious
+              devotion towards Coral. They want to reclaim their ravaged home and drive out both corporations and the
+              PCA out of it. </p>
+          </div>
+        </div>
+        <div id="invisible">
+
         </div>
       </div>
 
-      <div class="img-place image-deux">
-        <div class="img-desc">
-          <p>Side with the natives or the corporations through missions
-            that will test the very limits of your Armored Core. Shape
-            the future of Rubicon with your actions. Will you save
-            Rubicon or end it with your greed ?</p>
-        </div>
-      </div>
-
-      <div class="img-place image-trois">
-        <div class="img-desc">
-          <p>Discover the truth about the Coral with the true ending.
-            Available after you complete the first two campaigns
-            (siding with Rubicon/Corporations) for a grand total of 3
-            playthroughs.</p>
-        </div>
-      </div>
     </div>
 
-    <div class ="flex-double-faction"></div>
+    <div class="flex-double-faction"></div>
 
   </section>
 
 
 
 
-    <section>
-      <hr class="section-separator">
-    </section>
+  <section>
+    <hr class="section-separator">
+  </section>
 
-    <section class="factions-section">
-      <div class="section-title">
-        <h2 id="jump-factions">Factions</h2>
+  <section class="GO-section">
+    <div class="section-title">
+      <h2 id="jump-Gameplay-Overview">Gameplay Overview</h2>
+    </div>
+    <div class="flex-double">
+      <div class="flex-element flex-element-videos">
+        <video autoplay muted loop id="">
+          <source src="assets/Vidéos/Armored_Cut_Normal_Elite.mp4">
+        </video>
       </div>
-      <div class="flex-double">
-        <div class="flex-element flex-element-emblem">
-          <img src="assets/Images/Emblem_ACVI_PCA.webp">
-        </div>
 
-        <div class="flex-element flex-element-text">
-          <h3>Planetary Closure Administration</h3>
-          <p>The Planetary Closure Administration is an organization in ARMORED CORE VI FIRES OF RUBICON. The
-            PCA regulates access to Rubicon 3, and has commandeered numerous autonomous C-Weapons left behind by the
-            Rubicon Research Institute after the Fires of Ibis. </p>
-        </div>
+      <div class="flex-element flex-element-text">
+        <h3>Fast paced gameplay</h3>
+        <p> Combat itself takes place through a mission-based structure, focuses on tough and intense mecha battles, and
+          will feature dynamic and intense boss battles that only the mecha genre can offer. Enemies will be aggressive
+          and violent, and the game is designed expecting player playstyle to be that as well.</p>
       </div>
-    </section>
+    </div>
+  </section>
 
 
 
@@ -157,12 +182,17 @@
 
 
 
-    <!----<div class="flex-element-un">
+  <!----<div class="flex-element-un">
     <p>azfafazfdqvqdavvad</p>
   </div>
   <div class="flex-element-deux">
 
   </div></!---->
+
+
+
+  <script src="script.js"></script>
+
 </body>
 
 </html>
