@@ -1,6 +1,6 @@
-
-html{
+html {
   scroll-behavior: smooth;
+  /* Qui aurait cru que c'était aussi simple ?*/
 }
 
 /* BODY */
@@ -9,19 +9,16 @@ body {
   padding: 0;
   background-color: #000000;
   color: white;
-  margin-bottom: 2000px;
   font-family: 'Oswald', sans-serif;
 }
 
 
 /* HEADER */
 header {
-  /*background-color: black;*/
   height: 960px;
   width: auto;
   display: flex;
   flex-direction: column;
-  /*background-image: url("../assets/Images/armored-core-6-banner.jpg");*/
   justify-content: center;
   align-items: center;
 }
@@ -59,6 +56,7 @@ nav {
 
 /* HEADER NAV BAR */
 .flex-nav {
+  background-color: #ffffff;
   display: flex;
   height: 100px;
   margin-left: 100px;
@@ -69,7 +67,7 @@ nav {
   text-align: justify;
 }
 
-/* HEADER LIENS */
+/* HEADER LIENS sauts de page */
 .lien {
   color: black;
   text-decoration: none;
@@ -101,9 +99,10 @@ nav {
   height: 960px;
 }
 
-/* BANNER PLACEHOLDER */
+/* BANNER VIDEO */
 #title {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -118,7 +117,7 @@ h1 {
   background: #00000090;
   border-radius: 5%;
   color: white;
-  font-size: 70px;
+  font-size: 60px;
   font-family: 'Anton', sans-serif;
   display: none;
 
@@ -188,8 +187,9 @@ h2 {
 }
 
 
-/* WORLD */
+/* FACTIONS */
 
+/*Flex-factions englobe le .wrap*/
 .flex-factions {
   height: auto;
   width: 100%;
@@ -226,6 +226,7 @@ h2 {
   height: auto;
 }
 
+/* Technique de la Div invisible. Merci Anthony*/
 #invisible {
   width: 500px;
   height: auto;
@@ -251,10 +252,11 @@ h2 {
   background-image: url("../assets/Images/Emblem_ACVI_Rubicon_Liberation_Front.webp");
 }
 
+/* Pour le Hover concernant les descriptions de l'image*/
 .img-desc {
   position: absolute;
   bottom: 0;
-  background: #00000090;
+  background-color: #00000099;
   color: #fff;
   font-size: 20px;
   padding: 5px;
@@ -264,49 +266,68 @@ h2 {
 
 .img-place:hover .img-desc {
   opacity: 1;
-  transition: opacity 0.5s ease-out;
+  transition: 0.5s ease-out;
   visibility: visible;
 }
 
+/* GAMEPLAY OVERVIEW */
 /* FLEX Gameplay Overview*/
 .flex-double {
   display: flex;
   justify-content: center;
-  height: 700px;
+  height: auto;
   width: auto;
   gap: 200px;
   background-color: #00000090;
 }
 
-h3 {
-  background-color: #9d9d9d90;
-}
-
 .flex-element {
   display: flex;
-  height: 300px;
-  width: 500px;
+  height: 400px;
+  width: 533px;
+
 }
 
-/* FLEX DOUBLE */
-.flex-element-video {
+/* FLEX DOUBLE. Pour les éléments double. */
+.flex-element-videos {
+  height: 350px;
+  width: 622px;
   border: 2px solid white;
-  padding: 10px;
-  height: auto;
-  width: auto;
 }
 
-.flex-element-emblem img {
-  width: 100%;
-  height: auto;
-}
 
 .flex-element-text {
   display: flex;
+  align-items: flex-end;
   flex-direction: column;
+  font-size: 20px;
 }
 
+
 h3 {
+  background-color: #9d9d9d90;
+  text-align: center;
+  width: 100%;
+  height: auto;
   font-size: 30px;
-  padding: 0;
+}
+
+
+footer {
+  margin-top: 200px;
+  background-color: #ffffff;
+  display: flex;
+  height: 100px;
+  justify-content: space-evenly;
+  gap: 200px;
+
+}
+
+.flex-footer {
+  background-color: #ffffff;
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 200px;
 }
